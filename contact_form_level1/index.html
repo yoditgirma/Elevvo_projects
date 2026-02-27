@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <!-- linked to fontawsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <main class="main-section">
+    <div class="title">
+        <h2 class="title-text">Contact</h2>
+    </div>
+    <div class="contact-section">
+        <div class="hero-title">
+            <h1 class="contact-title">Get in Touch with Us</h1>
+            <p class="contact-description">Have questions or need AI solutions? Let us know by filling the form, and
+                we'll be in touch!</p>
+        </div>
+        <div class="container">
+            <div class="contact-address">
+                <ul class="contact-list-item">
+                    <li class="contact-list">
+                        <i class="fa-solid fa-location-crosshairs"></i>
+                        <span>Location</span>
+                        <p>12 Bole Road, Bole Sub-City, Addis Ababa 1000, Ethiopia</p>
+                    </li>
+                    <li class="contact-list">
+                        <i class="fa-regular fa-envelope"></i>
+                        <span>E-mail</span>
+                        <p>Admin@Xtract.com</p>
+                    </li>
+                    <li class="contact-list">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>Phone</span>
+                        <p>+(251) 959-456-337</p>
+                    </li>
+                    <li class="contact-list">
+                        <i class="fa-solid fa-globe"></i>
+                        <span>Link</span>
+                        <p>www.yoakincode.com</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="form-section">
+                <form action="#" class="contact-form">
+                    <div class="form-info">
+                        <div class="contact-info">
+                            <label for="fullname" class="form-label">Full Name</label>
+                            <input type="text" placeholder="Jane Smith" class="form-input">
+                        </div>
+                        <div class="contact-info">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" placeholder="jane@gmail.com" class="form-input">
+                        </div>
+                        <div class="contact-info">
+                            <label for="subject" class="form-label">Choose your subject:</label>
+                            <select name="Subject" id="Subject" >
+                                <option value="" id="placeholder">Select Subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="support">Technical Support</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="internship">Internship Application</option>
+                                <option value="complaint">Complaint</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-msg contact-info">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea name="message" id="msg" placeholder="Hi, i am Jane i want help with..." class="form-input"></textarea>
+                    </div>
+                    <button class="submit-btn">Submit Form</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+    </main>
+</body>
+
+</html>
