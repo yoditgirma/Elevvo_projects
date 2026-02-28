@@ -67,7 +67,7 @@ li {
     height: 150px;
     background: var(--highlight);
     filter: blur(100px);
-    z-index: 0;
+    z-index: 1;
 }
 
 /* HEADER SECTION */
@@ -131,3 +131,62 @@ header {
 }
 
 
+/* HERO SECTION */
+
+.hero-section {
+    background: var(--bg_color);
+    min-height: 100vh;
+}
+
+
+.hero-container {
+    display: flex;
+    /* gap: 50px; */
+   align-items: center;
+   justify-content: center;
+   padding-left: 50px;
+}
+
+.intro-text {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 70px 0;
+}
+
+.discount-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background: rgba(200, 200, 200, 0.2);
+    padding: 10px;
+    width: 160px;
+    border-radius: var(--border-radius-s);
+}
+
+.discount-card .ticket {
+    color: var(--highlight);
+}
+
+.discount-card .percent {
+    color: var(--text-main);
+    font-size: 12px;
+    font-weight: var(--font-weight-m);
+    margin-right: 5px;
+}
+
+.discount-card .discount {
+    color: var(--text-secindary);
+    font-size: 13px;
+}
+
+.hero-title {
+    color: var(--text-main);
+    font-size: var(--font-size-xl);
+    max-width: 70%;
+}
+
+.hero-image {
+    margin: 70px 0;
+}
