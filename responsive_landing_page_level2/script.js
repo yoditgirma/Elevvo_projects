@@ -1,5 +1,11 @@
 // Price section
+const items = document.querySelectorAll(".description-item");
 
+items.forEach(item => {
+    item.addEventListener("click", () =>{
+        item.classList.toggle("active");
+    })
+})
 
 
 // Testimonials section
