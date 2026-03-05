@@ -1,3 +1,25 @@
+// Dark n white mode
+
+let whitemode = localStorage.getItem('.whitemode');
+const themeSwitch = document.getElementById('theme-switch')
+
+const enableWhiteMode = () => {
+    document.body.classList.add('whitemode')
+    localStorage.setItem('whitemode', 'active')
+}
+
+const disableWhiteMode = () => {
+    document.body.classList.remove('whitemode')
+    localStorage.setItem('whitemode', null)
+}
+
+if(whitemode === 'active') enableWhiteMode()
+
+    themeSwitch.addEventListener('click', () => {
+        whitemode = localStorage.getItem('whitemode')
+        whitemode !== 'active' ? enableWhiteMode() : disableWhiteMode()
+    })
+
 // Price section
 const items = document.querySelectorAll(".description-item");
 
