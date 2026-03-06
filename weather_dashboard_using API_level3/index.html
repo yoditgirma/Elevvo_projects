@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <main class="main-container">
+        <header class="input-container">
+            <input type="text" class="city-input" placeholder="Search City">
+            <button class="search-btn"><span><i class="fa fa-search"></i></span></button>
+        </header>
+
+        <section class="weather-info" style="display: none;">
+            <div class="location-date-container">
+                <div class="location">
+                    <i class="fa fa-location-dot"></i>
+                    <span class="country-txt">Mumbai,</span><span class="country">India</span>
+                </div>
+                <p class="current-date-txt regular-txt">Wed, 07 Aug</p>
+            </div>
+
+
+            <div class="weather-summary-container">
+                <div class="weather-img">
+                    <img src="assets/images/cloudy.png" alt="cloudy" class="weather-summary-img">
+                </div>
+                <div class="weather-summary-info">
+                    <h1 class="temp-txt">29 °C</h1>
+                </div>
+                <div class="regular-txt">
+                    <p class="condition-txt regular-txt">Clouds</p>
+                </div>
+            </div>
+
+            <div class="weather-conditions-container">
+                <div class="wind regular-txt">
+                    <i class="fas fa-wind"></i>
+                    <div class="wind-txt">
+                        <p>Wind Speed</p>
+                        <p class="wind-value-txt">11M/s</p>
+                    </div>
+                </div>
+                <div class="humidity regular-txt">
+                    <i class="fa fa-droplet"></i>
+                    <div class="humidity-txt">
+                        <p>Humidity</p>
+                        <p class="humidity-value-txt">55%</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="forecast-title">
+                <i class="fa-regular fa-clock"></i>
+                <span>Daily Forecast</span>
+            </div>
+
+            <div class="forecast-items-container">
+                <div class="forecast-card">
+                    <div class="forecast-img">
+                        <img src="assets/images/thunderstorm.png" alt="thunderstorm">
+                    </div>
+                    <div class="forecast-date">
+                        <p>05 Aug</p>
+                    </div>
+                    <div class="forecast-temp">
+                        <p>29°</p>
+                    </div>
+                </div>
+                <div class="forecast-card">
+                    <div class="forecast-img">
+                        <img src="assets/images/thunderstorm.png" alt="thunderstorm">
+                    </div>
+                    <div class="forecast-date">
+                        <p>05 Aug</p>
+                    </div>
+                    <div class="forecast-temp">
+                        <p>29°</p>
+                    </div>
+                </div>
+                <div class="forecast-card">
+                    <div class="forecast-img">
+                        <img src="assets/images/thunderstorm.png" alt="thunderstorm">
+                    </div>
+                    <div class="forecast-date">
+                        <p>05 Aug</p>
+                    </div>
+                    <div class="forecast-temp">
+                        <p>29°</p>
+                    </div>
+                </div>
+                <div class="forecast-card">
+                    <div class="forecast-img">
+                        <img src="assets/images/thunderstorm.png" alt="thunderstorm">
+                    </div>
+                    <div class="forecast-date">
+                        <p>05 Aug</p>
+                    </div>
+                    <div class="forecast-temp">
+                        <p>29°</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Search section -->
+        <section class="search-city section-message">
+            <img src="assets/message/search_city.png" alt="search city">
+            <div>
+                <h1>Search City</h1>
+                <h4 class="regular-txt">
+                    Find out the weather condition of the city
+                </h4>
+            </div>
+        </section>
+
+        <!-- Not found secction -->
+        <section class="not-found section-message" style="display: none;">
+            <img src="assets/message/not_found.png" alt="search city">
+            <div>
+                <h1>Search City</h1>
+                <h4 class="regular-txt">
+                    Find out the weather condition of the city
+                </h4>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
