@@ -49,19 +49,21 @@
             </div>
 
             <div class="form-section">
-                <form action="#" class="contact-form">
+                <form action="#" class="contact-form" id="contactForm" novalidate>
                     <div class="form-info">
                         <div class="contact-info">
                             <label for="fullname" class="form-label">Full Name</label>
-                            <input type="text" placeholder="Jane Smith" class="form-input">
+                            <input type="text" id="fullname" placeholder="Jane Smith" class="form-input" >
+                            <small class="error" id="nameError"></small>
                         </div>
                         <div class="contact-info">
                             <label for="email" class="form-label">Email</label>
-                            <input type="email" placeholder="jane@gmail.com" class="form-input">
+                            <input type="email" id="email" placeholder="jane@gmail.com" class="form-input" >
+                            <small class="error" id="emailError"></small>
                         </div>
                         <div class="contact-info">
                             <label for="subject" class="form-label">Choose your subject:</label>
-                            <select name="Subject" id="Subject" >
+                            <select name="Subject" id="subject">
                                 <option value="" id="placeholder">Select Subject</option>
                                 <option value="general">General Inquiry</option>
                                 <option value="support">Technical Support</option>
@@ -69,12 +71,14 @@
                                 <option value="internship">Internship Application</option>
                                 <option value="complaint">Complaint</option>
                             </select>
+                            <small class="error" id="subjectError"></small>
                         </div>
                     </div>
 
                     <div class="form-msg contact-info">
                         <label for="message" class="form-label">Message</label>
-                        <textarea name="message" id="msg" placeholder="Hi, i am Jane i want help with..." class="form-input"></textarea>
+                        <textarea name="message" id="msg" placeholder="Hi, i am Jane i want help with..." class="form-input" ></textarea>
+                        <small class="error" id="msgError"></small>
                     </div>
                     <button class="submit-btn">Submit Form</button>
                 </form>
